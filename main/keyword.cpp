@@ -11,11 +11,6 @@
 #include "led_strip.h"
 #include "edge-impulse-sdk/classifier/ei_run_classifier.h"
 
-// #ifdef esp_nn_conv_s16_mult4_1x1_esp32s3
-// #define ESP32S3 1
-// #else
-// #define ESP32S3 0
-// #endif
 
 /*I2S Pin assignments*/
 #define STD_BCLK (gpio_num_t) CONFIG_I2S_CLK_GPIO // I2S bit clock io number
@@ -55,11 +50,9 @@ static void set_led_rgb(led_control_t *led_control)
     /* If the addressable LED is enabled */
     if (led_control->s_led_state)
     {
-        //printf("Direction:%d, blue:%d\n",led_control->direction, led_control->blue);
         if (led_control->blue < 1 || led_control->blue > 20){
             led_control->direction = !led_control->direction;
         }
-        //led_control->direction = !(led_control->blue < 1 || led_control->blue > 20);
         led_control->blue += (led_control->direction? 1 : -1);
         led_control->red = (led_control->red > 0) ? (led_control->red - 5) : led_control->red;
         led_control->green = (led_control->green > 0) ? (led_control->green - 5) : led_control->green;
