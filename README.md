@@ -35,5 +35,5 @@ requiring deep knowledge of machine learning or embedded systems.
 git clone --recurse-submodules https://github.com/klumw/keyword_detection.git
 
 ### Build with idf.py
-idf.py set-target esp32s3
+idf.py set-target esp32s3  
 idf.py build
