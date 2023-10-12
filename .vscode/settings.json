@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "compare": "c"
+    },
+    "idf.adapterTargetName": "esp32s3",
+    "idf.flashType": "UART"
+}
