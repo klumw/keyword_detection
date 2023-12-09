@@ -122,7 +122,7 @@ static void i2s_init_std_simplex(void)
     ESP_ERROR_CHECK(i2s_new_channel(&rx_chan_cfg, NULL, &rx_chan));
 
     i2s_std_config_t rx_std_cfg = {
-        I2S_STD_CLK_DEFAULT_CONFIG(EI_CLASSIFIER_FREQUENCY),
+        .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(EI_CLASSIFIER_FREQUENCY),
         .slot_cfg = I2S_STD_PHILIPS_SLOT_DEFAULT_CONFIG(I2S_DATA_BIT_WIDTH_32BIT, I2S_SLOT_MODE_STEREO),
         .gpio_cfg = {
             .mclk = I2S_GPIO_UNUSED,
