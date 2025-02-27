@@ -22,7 +22,7 @@ requiring deep knowledge of machine learning or embedded systems.
 
 ## Prerequisites
 
-* ESP-IDF >= v5.1
+* ESP-IDF >= v5.3.2
 * [ESP-32-S3-DevKitC-1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) or similar board
 * I2S microphone, e.g. [SKU 107990153](https://www.seeedstudio.com/Sipeed-I2S-Mic-for-MAIX-Dev-Boards-p-2887.html)
 
