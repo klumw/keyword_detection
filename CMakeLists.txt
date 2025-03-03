@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(wakeword)
+project(keyword)
 
 idf_build_set_property(COMPILE_OPTIONS "-fdiagnostics-color=always" APPEND)
 idf_build_set_property(COMPILE_OPTIONS "-Wno-unused-variable" APPEND)
@@ -15,3 +15,4 @@ idf_build_set_property(COMPILE_OPTIONS "-Wno-unused-but-set-parameter" APPEND)
 idf_build_set_property(COMPILE_OPTIONS "-Wno-error=nonnull-compare" APPEND)
 idf_build_set_property(COMPILE_OPTIONS "-Wno-error=stringop-truncation" APPEND)
 idf_build_set_property(COMPILE_OPTIONS "-Wno-missing-field-initializers" APPEND)
+idf_build_set_property(COMPILE_OPTIONS "-Wno-deprecated-declarations" APPEND)

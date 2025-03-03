@@ -3,5 +3,6 @@
         "compare": "c"
     },
     "idf.adapterTargetName": "esp32s3",
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "idf.pythonInstallPath": "/home/wkl/.espressif/python_env/idf5.4_py3.12_env/bin/python"
 }

@@ -27,4 +27,3 @@ RECURSIVE_FIND_FILE_APPEND(EI_SOURCE_FILES "${EI_SDK_FOLDER}/CMSIS/NN/Source" "*
 list(APPEND EI_SOURCE_FILES "${EI_SDK_FOLDER}/tensorflow/lite/c/common.c")
 
 idf_component_register(SRCS "keyword.cpp" ${MODEL_SOURCE} ${EI_SOURCE_FILES} INCLUDE_DIRS ".")
-target_compile_options(${COMPONENT_LIB} PRIVATE -std=gnu++17)
